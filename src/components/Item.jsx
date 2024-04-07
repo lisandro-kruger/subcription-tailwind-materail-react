@@ -7,15 +7,9 @@ import {
   Button,
 } from "@mui/material";
 import { moneyFormat } from "../helpers";
+import DeleteItem from "./DeleteItem";
 
 const Item = ({ price, type, id, eliminarItem, editItem }) => {
-  const HandleDelete = (e) => {
-    e.preventDefault();
-    const answer = window.confirm(`Borrar Suscripción a ${type}`);
-    if (answer) {
-      eliminarItem(id);
-    }
-  };
 
   const HandleEdit = (e) => {
     e.preventDefault();
@@ -52,14 +46,7 @@ const Item = ({ price, type, id, eliminarItem, editItem }) => {
             >
               Editar
             </Button>
-            <Button
-              variant="contained"
-              color="secondary"
-              onClick={HandleDelete}
-              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            >
-              Borrar
-            </Button>
+            <DeleteItem type={type} id={id} eliminarItem={eliminarItem} />
           </div>
         </CardContent>
       </Card>
