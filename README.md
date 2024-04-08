@@ -37,7 +37,7 @@ Muestra el presupuesto, el dinero disponible y el gasto total.
 Representa una suscripción individual en la lista. Muestra el tipo de servicio, el precio y ofrece opciones para editar o eliminar la suscripción.
 
 ### Tecnologías Utilizadas
--- React: Biblioteca de JavaScript para construir interfaces de usuario.
--- Material-UI: Framework de componentes de React basado en Material Design.
--- Tailwind CSS: Framework de utilidades CSS para estilizar los componentes.
--- Despliegue en Vercel
+* React: Biblioteca de JavaScript para construir interfaces de usuario.
+* Material-UI: Framework de componentes de React basado en Material Design.
+* Tailwind CSS: Framework de utilidades CSS para estilizar los componentes.
+* Despliegue en Vercel
