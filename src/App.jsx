@@ -11,13 +11,13 @@ function App() {
   const component = isValid ? <Main count={count} /> : <FormMoney setCount={setCount} setIsValid={setIsValid} />;
 
   return (
-    <div className="App">
+    <>
       <CssBaseline />
       <Container maxWidth="sm">
         <Header />
         {component}
       </Container>
-    </div>
+    </>
   );
 }
 
